@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purrify™ | Advanced Odor Elimination for Cat Litter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1);
+        }
+        .glow {
+            box-shadow: 0 0 15px rgba(75, 158, 219, 0.3);
+        }
+        .product-focus {
+            transition: all 0.3s ease;
+        }
+        .product-focus:hover {
+            transform: scale(1.03);
+        }
+        .active-size {
+            background-color: #4b9edb !important;
+            color: white !important;
+            font-weight: 600;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(75, 158, 219, 0.1) 0%, rgba(255,255,255,0.5) 100%);
+            border-left: 4px solid #4b9edb;
+        }
+        .money-back {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9f5ff 100%);
+        }
+    </style>
+</head>
+<body class="gradient-bg text-gray-800 min-h-screen font-sans">
+    <!-- Top Announcement Bar -->
+    <div class="bg-indigo-900 text-white text-center py-2 px-4 text-sm">
+        🔥 LIMITED TIME: Buy 2 Get 1 Free + FREE Shipping on Orders Over $49
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-6">
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-8 md:mb-12">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cat text-white"></i>
+                </div>
+                <h1 class="text-xl md:text-2xl font-bold text-gray-800">purrify<span class="text-indigo-600">.ca</span></h1>
+            </div>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#how-it-works" class="hover:text-indigo-600 transition">How It Works</a>
+                <a href="#sizes" class="hover:text-indigo-600 transition">Products</a>
+                <a href="#faq" class="hover:text-indigo-600 transition">FAQ</a>
+                <a href="#guarantee" class="hover:text-indigo-600 transition">Guarantee</a>
+                <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg font-medium ml-4 transition">
+                    Order Now
+                </button>
+            </nav>
+            <button class="md:hidden text-2xl text-gray-600">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between mb-16 md:mb-24">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <div class="bg-indigo-100 text-indigo-800 inline-block px-3 py-1 rounded-full text-xs font-medium mb-4">
+                    🐾 CAT LITER REVOLUTION
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">Finally...<br><span class="text-indigo-600">No More Litter Box Smells!</span></h2>
+                <p class="text-gray-600 mb-8 text-lg">Purrify™ uses <strong>medical-grade activated carbon (1,150 m²/g surface area)</strong> to <em>eliminate</em> odors at the molecular level — not just cover them up like those cheap baking soda products.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg font-bold transition transform hover:scale-105 glow flex items-center justify-center">
+                        <i class="fas fa-bolt mr-2"></i> SHOP NOW
+                    </button>
+                    <button class="border border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-8 py-4 rounded-lg font-bold transition transform hover:scale-105 flex items-center justify-center">
+                        <i class="fas fa-play-circle mr-2"></i> WATCH DEMO
+                    </button>
+                </div>
+                <div class="flex items-center mt-6 space-x-2 text-sm text-gray-500">
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <span>4.9/5 from 1,247 cat owners</span>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <div class="absolute -inset-4 bg-indigo-100 rounded-2xl -rotate-6"></div>
+                    <div class="relative bg-white p-4 rounded-2xl shadow-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1591769225440-811ad7d6dab2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                             alt="Happy cat with clean litter box" 
+                             class="w-full h-auto rounded-lg">
+                        <div class="absolute bottom-4 right-4 bg-white/90 px-3 py-2 rounded-full shadow-md flex items-center">
+                            <div class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                            <span class="text-xs font-semibold">ODOR FREE!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Badges -->
+        <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 mb-16 bg-indigo-50 py-6 rounded-xl">
+            <div class="text-center">
+                <div class="text-indigo-600 text-3xl font-bold">1,150 m²/g</div>
+                <div class="text-gray-600 text-sm">Surface Area Activated Carbon</div>
+            </div>
+            <div class="text-center">
+                <div class="text-indigo-600 text-3xl font-bold">93%</div>
+                <div class="text-gray-600 text-sm">Odor Elimination</div>
+            </div>
+            <div class="text-center">
+                <div class="text-indigo-600 text-3xl font-bold">8,000+</div>
+                <div class="text-gray-600 text-sm">Happy Cats</div>
+            </div>
+            <div class="text-center">
+                <div class="text-indigo-600 text-3xl font-bold">100%</div>
+                <div class="text-gray-600 text-sm">Natural & Non-Toxic</div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <section id="how-it-works" class="mb-16 md:mb-24">
+            <h2 class="text-3xl font-bold text-center mb-4">The <span class="text-indigo-600">Purrify™</span> Difference</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Why does Purrify work when other products fail? It's all about the science of activated carbon.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border border-gray-100">
+                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-atom text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Microporous Structure</h3>
+                    <p class="text-gray-600 text-center">Each gram of our medical-grade carbon has <strong>1,150 square meters</strong> of surface area - that's like a football field of odor-absorbing power in a teaspoon!</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border border-gray-100">
+                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-magnet text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Adsorption Magic</h3>
+                    <p class="text-gray-600 text-center">Unlike baking soda that just masks smells, our carbon <strong>traps odor molecules</strong> permanently in its microscopic pores using Van der Waals forces.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border border-gray-100">
+                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-wind text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Ammonia Neutralizer</h3>
+                    <p class="text-gray-600 text-center">Specially processed to target <strong>ammonia molecules</strong> (the main culprit in cat urine odor) and convert them to harmless compounds.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section id="sizes" class="mb-16 md:mb-24 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-3">Choose Your <span class="text-indigo-600">Purrify™</span> Size</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Select the perfect size for your feline family. All prices in CAD.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Small Size -->
+                <div class="product-focus bg-gray-50 p-6 rounded-xl border-2 border-gray-200 hover:border-indigo-300 relative">
+                    <div class="absolute top-4 right-4 bg-indigo-600 text-white text-xs px-2 py-1 rounded-full">BEST SELLER</div>
+                    <div class="flex justify-center mb-6">
+                        <div class="w-40 h-40 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1587135990345-fcfa3f1ad2d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="60g Purrify" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Purrify™ Starter Pack</h3>
+                    <p class="text-gray-600 text-center mb-4">60 grams - Lasts 1-2 months</p>
+                    <div class="text-center mb-6">
+                        <span class="text-3xl font-bold text-indigo-600">$19.99</span>
+                        <span class="text-gray-400 ml-2 line-through">$24.99</span>
+                    </div>
+                    <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            For 1-2 cats
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            300+ sq meters of carbon
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Small litter boxes
+                        </li>
+                    </ul>
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-medium transition">
+                        ADD TO CART
+                    </button>
+                </div>
+                
+                <!-- Medium Size -->
+                <div class="product-focus bg-indigo-50 p-6 rounded-xl border-2 border-indigo-100 relative">
+                    <div class="absolute top-4 right-4 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">BEST VALUE</div>
+                    <div class="flex justify-center mb-6">
+                        <div class="w-40 h-40 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1606229365481-6e9da120ad16?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="200g Purrify" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Purrify™ Family Pack</h3>
+                    <p class="text-gray-600 text-center mb-4">200 grams - Lasts 4-6 months</p>
+                    <div class="text-center mb-6">
+                        <span class="text-3xl font-bold text-indigo-600">$49.99</span>
+                        <span class="text-gray-400 ml-2 line-through">$64.99</span>
+                    </div>
+                    <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            For 2-4 cats
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            1,000+ sq meters of carbon
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Large litter boxes
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            SAVE 23%
+                        </li>
+                    </ul>
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-medium transition">
+                        ADD TO CART
+                    </button>
+                </div>
+                
+                <!-- Large Size -->
+                <div class="product-focus bg-gray-50 p-6 rounded-xl border-2 border-gray-200 hover:border-indigo-300 relative">
+                    <div class="flex justify-center mb-6">
+                        <div class="w-40 h-40 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="500g Purrify" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Purrify™ Ultimate Pack</h3>
+                    <p class="text-gray-600 text-center mb-4">500 grams - Lasts 8-12 months</p>
+                    <div class="text-center mb-6">
+                        <span class="text-3xl font-bold text-indigo-600">$99.99</span>
+                        <span class="text-gray-400 ml-2 line-through">$129.99</span>
+                    </div>
+                    <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            For 4+ cats or catteries
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            2,500+ sq meters of carbon
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Multiple litter boxes
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            SAVE 30%
+                        </li>
+                    </ul>
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-medium transition">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bundle Deal -->
+            <div class="highlight-box p-6 rounded-xl mb-8">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-2/3 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold mb-2">⚡ Exclusive Bundle Deal</h3>
+                        <p class="text-gray-600">Buy 2 Family Packs (200g each) and get 1 Starter Pack (60g) FREE — that's 460g total for just $99.98 ($119.97 value).</p>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center md:justify-end">
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-bold whitespace-nowrap">
+                            GET BUNDLE ($20 SAVINGS)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="mb-16 md:mb-24">
+            <h2 class="text-3xl font-bold text-center mb-4">What <span class="text-indigo-600">Cat Parents</span> Say</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Real results from real customers (we don't do paid reviews)</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah K.</h4>
+                            <p class="text-gray-500 text-sm mb-2">Toronto, ON</p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"I was skeptical but after trying EVERYTHING... this actually works. I have 3 Persians and their litter box is in my small apartment. Before Purrify, guests would wrinkle their noses within minutes of arriving. Now? Nothing. It's like magic carbon fairy dust."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mark T.</h4>
+                            <p class="text-gray-500 text-sm mb-2">Vancouver, BC</p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"My wife was about to make me choose between our two cats or sleeping in the same bed. The ammonia smell was that bad. Purrify saved my marriage (mostly joking but not entirely). I sprinkle it every time I scoop and the difference is night and day."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Lisa M.</h4>
+                            <p class="text-gray-500 text-sm mb-2">Montreal, QC</p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"I run a small cat rescue with 12 permanent residents. The smell was becoming unmanageable until I found Purrify. Now volunteers comment on how much better it smells. The 500g container lasts me about 9 months with daily use across 8 litter boxes."</p>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">David P.</h4>
+                            <p class="text-gray-500 text-sm mb-2">Calgary, AB</p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"My Bengal's urine is... potent. Baking soda did nothing. Those litter deodorizers just made it smell like flowers mixed with cat pee (which is worse). Purrify actually eliminates the smell. I use about 1/2 teaspoon per day in a large litter box and change it weekly."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usage Instructions -->
+        <section class="mb-16 md:mb-24 bg-indigo-50 rounded-2xl p-8">
+            <h2 class="text-3xl font-bold text-center mb-12">How to Use <span class="text-indigo-600">Purrify™</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                        <span class="text-indigo-600 text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Clean the Litter</h3>
+                    <p class="text-gray-600">Scoop waste daily as normal. Monthly, empty and wash the entire litter box with mild soap.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                        <span class="text-indigo-600 text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Sprinkle Purrify</h3>
+                    <p class="text-gray-600">After scooping, add 1/4 to 1/2 teaspoon (60g pack includes scoop) evenly across the litter surface.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                        <span class="text-indigo-600 text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mix Lightly</h3>
+                    <p class="text-gray-600">Gently stir into the top layer of litter. The carbon will work continuously for 5-7 days.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Money Back Guarantee -->
+        <section id="guarantee" class="money-back mb-16 md:mb-24 rounded-2xl p-8 border border-gray-200">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
+                    <div class="bg-white w-32 h-32 rounded-full flex items-center justify-center shadow-lg">
+                        <i class="fas fa-hand-holding-usd text-4xl text-indigo-600"></i>
+                    </div>
+                </div>
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h2 class="text-3xl font-bold mb-4">100% Smell-Free Guarantee</h2>
+                    <p class="text-gray-600 mb-6 text-lg">We're so confident you'll love Purrify™ that we offer a <strong>60-day money-back guarantee</strong>. If you don't notice a dramatic reduction in litter box odors, just email us for a full refund — no questions asked.</p>
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-bold transition">
+                        TRY IT RISK-FREE
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="mb-16 md:mb-24">
+            <h2 class="text-3xl font-bold text-center mb-4">Frequently <span class="text-indigo-600">Asked Questions</span></h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Everything you need to know about Purrify™</p>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50">
+                        <h3 class="font-bold text-lg">How is Purrify different from baking soda?</h3>
+                        <i class="fas fa-plus text-indigo-600 ml-4"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 border-t border-gray-100">
+                        <p class="text-gray-700">Baking soda merely masks odors through a weak chemical reaction. Purrify's <strong>medical-grade activated carbon (1,150 m²/g)</strong> physically traps and destroys odor molecules in its vast network of microscopic pores. It's like comparing a screen door to a bank vault when it comes to odor containment.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50">
+                        <h3 class="font-bold text-lg">How long does one container last?</h3>
+                        <i class="fas fa-plus text-indigo-600 ml-4"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 border-t border-gray-100">
+                        <p class="text-gray-700 mb-4">Usage varies based on:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle-notch text-xs text-indigo-600 mt-1 mr-2"></i>
+                                <span><strong>60g Starter Pack:</strong> 1-2 months for one cat (1/2 tsp every 2-3 days)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle-notch text-xs text-indigo-600 mt-1 mr-2"></i>
+                                <span><strong>200g Family Pack:</strong> 4-6 months for two cats (1/2 tsp daily)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle-notch text-xs text-indigo-600 mt-1 mr-2"></i>
+                                <span><strong>500g Ultimate Pack:</strong> 8-12 months for 3+ cats or multiple litter boxes</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50">
+                        <h3 class="font-bold text-lg">Is Purrify safe for my cat?</h3>
+                        <i class="fas fa-plus text-indigo-600 ml-4"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 border-t border-gray-100">
+                        <p class="text-gray-700">Absolutely. Our activated carbon is the same pharmaceutical-grade material used in:</p>
+                        <ul class="space-y-2 text-gray-700 mt-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-2"></i>
+                                Water filtration systems
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-2"></i>
+                                Kidney dialysis machines
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-2"></i>
+                                Emergency poison treatment
+                            </li>
+                        </ul>
+                        <p class="text-gray-700 mt-4">It's 100% non-toxic and inert. Even if ingested in small amounts (as might happen when cats lick their paws), it's harmless.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50">
+                        <h3 class="font-bold text-lg">What types of odors does it eliminate?</h3>
+                        <i class="fas fa-plus text-indigo-600 ml-4"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 border-t border-gray-100">
+                        <p class="text-gray-700">Purrify is specially formulated to target the most offensive litter box odors:</p>
+                        <ul class="space-y-2 text-gray-700 mt-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-2"></i>
+                                <strong>Ammonia</strong> (from urine breakdown)
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-2"></i>
+                                <strong>Mercaptans</strong> (sulfur compounds in feces)
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-2"></i>
+                                <strong>Organic amines</strong> (responsible for "cat smell")
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-0.5 mr-2"></i>
+                                <strong>Bacterial metabolites</strong> (from decomposition)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50">
+                        <h3 class="font-bold text-lg">Does it work with all types of litter?</h3>
+                        <i class="fas fa-plus text-indigo-600 ml-4"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 border-t border-gray-100">
+                        <p class="text-gray-700">Yes! Purrify enhances any litter type by tackling odors at a molecular level. It works particularly well with:</p>
+                        <ul class="space-y-2 text-gray-700 mt-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-paw text-indigo-600 mt-0.5 mr-2"></i>
+                                Clumping clay litter
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-paw text-indigo-600 mt-0.5 mr-2"></i>
+                                Silica gel crystals
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-paw text-indigo-600 mt-0.5 mr-2"></i>
+                                Pine or wood pellets
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-paw text-indigo-600 mt-0.5 mr-2"></i>
+                                Recycled paper
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-paw text-indigo-600 mt-0.5 mr-2"></i>
+                                Corn, wheat or walnut litters
+                            </li>
+                        </ul>
+                        <p class="text-gray-700 mt-4">For best results, mix lightly into the top layer of litter rather than dumping at the bottom.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50">
+                        <h3 class="font-bold text-lg">How does shipping work?</h3>
+                        <i class="fas fa-plus text-indigo-600 ml-4"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 border-t border-gray-100">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 text-indigo-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <i class="fas fa-truck text-xs"></i>
+                                </div>
+                                <span><strong>Canada:</strong> FREE shipping on orders over $49 (3-5 business days). $6.99 flat rate otherwise.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 text-indigo-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <i class="fas fa-box-open text-xs"></i>
+                                </div>
+                                <span><strong>USA:</strong> $9.99 flat rate (5-7 business days). Free shipping for orders over $99 USD.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 text-indigo-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <i class="fas fa-globe-americas text-xs"></i>
+                                </div>
+                                <span><strong>International:</strong> Contact us for rates. Some countries prohibit import of activated carbon products.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 text-indigo-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <i class="fas fa-bolt text-xs"></i>
+                                </div>
+                                <span><strong>Express Shipping:</strong> Available at checkout (2-3 days Canada, 3-5 days USA).</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="bg-gradient-to-r from-indigo-600 to-blue-600 rounded-2xl p-8 md:p-12 text-center mb-16">
+            <h2 class="text-2xl md:text-4xl font-bold mb-6 text-white">Ready to Transform Your Litter Box Experience?</h2>
+            <p class="text-indigo-100 max-w-2xl mx-auto mb-8 text-lg">Join over 8,000 cat owners who've reclaimed their homes from litter box odors. Choose your Purrify size below.</p>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                        <h3 class="text-white font-bold mb-2">60g Starter Pack</h3>
+                        <div class="text-white text-2xl font-bold mb-3">$19.99</div>
+                        <button class="w-full bg-white text-indigoE-600 hover:bg-gray-100 py-3 rounded-lg font-bold transition">
+                            BUY NOW
+                        </button>
+                    </div>
+                    <div class="bg-white/20 p-4 rounded-xl border-2 border-yellow-300 relative">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">BEST VALUE</div>
+                        <h3 class="text-white font-bold mb-2">200g Family Pack</h3>
+                        <div class="text-white text-2xl font-bold mb-3">$49.99</div>
+                        <button class="w-full bg-yellow-400 text-indigo-800 hover:bg-yellow-300 py-3 rounded-lg font-bold transition">
+                            BUY NOW
+                        </button>
+                    </div>
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                        <h3 class="text-white font-bold mb-2">500g Ultimate Pack</h3>
+                        <div class="text-white text-2xl font-bold mb-3">$99.99</div>
+                        <button class="w-full bg-white text-indigo-600 hover:bg-gray-100 py-3 rounded-lg font-bold transition">
+                            BUY NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <img src="https://cdn.pixabay.com/photo/2016/04/01/09/59/credit-card-1300481_640.png" alt="Payment methods" class="h-8 mx-auto opacity-80">
+                <p class="text-indigo-100 text-sm mt-4">30-Day Money Back Guarantee • Secure Checkout</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-12 border-t border-gray-200">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-cat text-white text-sm"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Purrify™</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm">Advanced odor elimination powered by 1,150 m²/g medical-grade activated carbon. Made with love in Canada.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition text-sm">How It Works</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition text-sm">Support Center</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition text-sm">Product Guides</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition text-sm">Wholesale Inquiries</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition text-sm">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition text-sm">Contact</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition text-sm">Blog</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition text-sm">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Stay Connected</h4>
+                    <div class="flex space-x-4 mb-6">
+                        <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-indigo-100 rounded-full flex items-center justify-center transition text-indigo-600">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-indigo-100 rounded-full flex items-center justify-center transition text-indigo-600">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-indigo-100 rounded-full flex items-center justify-center transition text-indigo-600">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-indigo-100 rounded-full flex items-center justify-center transition text-indigo-600">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-600 text-sm">Subscribe for tips and exclusive offers</p>
+                    <div class="flex mt-2">
+                        <input type="email" placeholder="Your email" class="bg-gray-100 text-gray-800 px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full text-sm">
+                        <button class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-lg text-white text-sm">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2023 Purrify.ca. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-indigo-600 text-sm transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-indigo-600 text-sm transition">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-indigo-600 text-sm transition">Shipping Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-indigo-600 text-sm transition">Accessibility</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.classList.replace('fa-plus', 'fa-minus');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.replace('fa-minus', 'fa-plus');
+                }
+                
+                // Close other FAQs when one is opened (optional)
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    if (item !== content && !item.classList.contains('hidden')) {
+                        item.classList.add('hidden');
+                        const otherIcon = item.previousElementSibling.querySelector('i');
+                        if (otherIcon) {
+                            otherIcon.classList.replace('fa-minus', 'fa-plus');
+                        }
+                    }
+                });
+            });
+        });
+
+        // Simple Cart Animation
+        document.querySelectorAll('[
+</html>
