@@ -3,11 +3,34 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #4b9edb; /* Primary indigo-blue for buttons, CTAs */
+  --primary-light: #6fb5e5;
+  --primary-dark: #2563eb;
+  --secondary: #f75d2c; /* Hero & urgency accent - bright orange */
+  --secondary-light: #ff8a64;
+  --secondary-dark: #d44016;
+  --green: #76c945; /* Accent green for eco-benefits, checkmarks */
+  --green-light: #9ad975;
+  --green-dark: #5ba32e;
+  --yellow: #fcd34d; /* Warm yellow for pricing cards */
+  --yellow-light: #fef3c7; /* Utility highlight */
+  --yellow-dark: #ea5b3c; /* Red-orange for secondary CTA box */
+  --mid-tier: #fed7aa; /* Soft orange for mid-tier pricing */
+  --premium-tier: #d9f99d; /* Light lime for premium tier */
+  --text-primary: #1f2937; /* Slate gray for body & heading text */
+  --text-secondary: #6b7280; /* Gray for sublabels, fine print */
+  --bg-white: #ffffff; /* Background colors */
+  --bg-light: #f9fafb; /* Soft gray for subtle backgrounds */
+  --bg-gray: #f0f0f0;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-green: var(--green);
+  --color-yellow: var(--yellow);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -20,10 +43,24 @@
 }
 
 body {
-  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
-  color: var(--foreground);
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);
+  color: var(--text-gray);
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/med bag') center/cover no-repeat fixed;
+  opacity: 0.05;
+  z-index: -1;
+  filter: blur(8px);
 }
 
 @keyframes float {
@@ -36,7 +73,8 @@ body {
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+  background: linear-gradient(135deg, rgba(249, 249, 249, 0.8) 0%, rgba(255, 255, 255, 0.9) 100%);
+  backdrop-filter: blur(10px);
 }
 
 .card-hover {
@@ -45,58 +83,59 @@ body {
 
 .card-hover:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px -5px rgba(79, 70, 229, 0.2);
+  box-shadow: 0 10px 15px -5px rgba(75, 158, 219, 0.25);
 }
 
 .glow {
-  box-shadow: 0 0 15px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 0 15px rgba(75, 158, 219, 0.4);
 }
 
 .product-focus {
   transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
 }
 
 .product-focus:hover {
   transform: scale(1.03);
-  box-shadow: 0 15px 30px -10px rgba(79, 70, 229, 0.25);
+  box-shadow: 0 15px 30px -10px rgba(75, 158, 219, 0.3);
 }
 
 .active-size {
-  background-color: #4f46e5 !important;
+  background-color: var(--primary) !important;
   color: white !important;
   font-weight: 600;
 }
 
 .highlight-box {
-  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(255,255,255,0.5) 100%);
-  border-left: 4px solid #4f46e5;
-  backdrop-filter: blur(8px);
+  background: linear-gradient(135deg, rgba(75, 158, 219, 0.1) 0%, rgba(255, 255, 255, 0.6) 100%);
+  border-left: 4px solid var(--primary);
+  backdrop-filter: blur(12px);
 }
 
 .money-back {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9f5ff 100%);
-  backdrop-filter: blur(8px);
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.7) 0%, rgba(233, 245, 255, 0.8) 100%);
+  backdrop-filter: blur(12px);
 }
 
-/* Glassmorphism effects */
+/* Enhanced Glassmorphism effects */
 .glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
 .glass-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 35px rgba(75, 158, 219, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
@@ -107,4 +146,214 @@ body {
 
 .text-shadow-white {
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Brand color utility classes */
+.bg-brand-primary {
+  background-color: var(--primary);
+}
+
+.bg-brand-primary-light {
+  background-color: var(--primary-light);
+}
+
+.bg-brand-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.bg-brand-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-brand-secondary-light {
+  background-color: var(--secondary-light);
+}
+
+.bg-brand-secondary-dark {
+  background-color: var(--secondary-dark);
+}
+
+.bg-brand-green {
+  background-color: var(--green);
+}
+
+.bg-brand-green-light {
+  background-color: var(--green-light);
+}
+
+.bg-brand-green-dark {
+  background-color: var(--green-dark);
+}
+
+.bg-brand-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-brand-yellow-light {
+  background-color: var(--yellow-light);
+}
+
+.bg-brand-yellow-dark {
+  background-color: var(--yellow-dark);
+}
+
+.text-brand-primary {
+  color: var(--primary);
+}
+
+.text-brand-secondary {
+  color: var(--secondary);
+}
+
+.text-brand-green {
+  color: var(--green);
+}
+
+.text-brand-yellow {
+  color: var(--yellow);
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+.border-brand-primary {
+  border-color: var(--primary);
+}
+
+.border-brand-secondary {
+  border-color: var(--secondary);
+}
+
+.border-brand-green {
+  border-color: var(--green);
+}
+
+.border-brand-yellow {
+  border-color: var(--yellow);
+}
+
+.hover\:bg-brand-primary-dark:hover {
+  background-color: var(--primary-dark);
+}
+
+.hover\:bg-brand-secondary-dark:hover {
+  background-color: var(--secondary-dark);
+}
+
+.hover\:bg-brand-green-dark:hover {
+  background-color: var(--green-dark);
+}
+
+.hover\:bg-brand-yellow-dark:hover {
+  background-color: var(--yellow-dark);
+}
+
+.hover\:text-brand-primary:hover {
+  color: var(--primary);
+}
+
+.hover\:text-brand-secondary:hover {
+  color: var(--secondary);
+}
+
+.hover\:text-brand-green:hover {
+  color: var(--green);
+}
+
+.hover\:text-brand-yellow:hover {
+  color: var(--yellow);
+}
+
+/* Legacy classes for backward compatibility */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-secondary-light {
+  background-color: var(--secondary-light);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: var(--primary-dark);
+}
+
+.hover\:bg-secondary-dark:hover {
+  background-color: var(--secondary-dark);
+}
+
+/* Additional glassmorphic components */
+.glass-container {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+}
+
+.glass-button {
+  background: rgba(75, 158, 219, 0.7);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(75, 158, 219, 0.3);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background: rgba(75, 158, 219, 0.9);
+  box-shadow: 0 8px 20px rgba(75, 158, 219, 0.3);
+}
+
+/* Heading styles for consistent brand application */
+h2 {
+  color: var(--text-primary);
+}
+
+h2.on-dark {
+  color: white;
+}
+
+/* Contrast helpers */
+.high-contrast {
+  color: white;
+  background-color: var(--text-dark);
+}
+
+.high-contrast-primary {
+  color: white;
+  background-color: var(--primary-dark);
+}
+
+.high-contrast-secondary {
+  color: white;
+  background-color: var(--secondary-dark);
 }
