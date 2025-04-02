@@ -9,11 +9,11 @@ export default function Hero() {
           <div className="bg-indigo-100 text-indigo-800 inline-block px-3 py-1 rounded-full text-xs font-medium">
             🐾 CAT LITTER REVOLUTION
           </div>
-          <div className="flex items-center space-x-1">
-            <span className="text-sm">Made in</span>
-            <span className="text-xl">🇨🇦</span>
-            <span className="text-sm">Montreal</span>
-            <span className="text-xl">⚜️</span>
+          <div className="flex items-center space-x-1 text-sm text-gray-600">
+            <span>Canadian product</span>
+            <span className="text-2xl mx-1">🇨🇦</span>
+            <span>Made in Montreal</span>
+            <span className="text-2xl ml-1">⚜️</span>
           </div>
         </div>
         <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-800">
